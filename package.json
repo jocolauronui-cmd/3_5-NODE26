@@ -1,0 +1,16 @@
+{
+  "name": "gab_ejs",
+  "version": "1.0.0",
+  "description": "introduction to express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "John Christian Gabriel Lauron",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
