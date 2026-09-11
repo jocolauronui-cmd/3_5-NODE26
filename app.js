@@ -11,13 +11,18 @@ app.get('/', (req, res)=>{
  });
 
  app.post('/register' , (req, res)=>{
-    const ln = req.body.ln;
-    const fn = req.body.fn;
-    const age = req.body.age;
-    const add = req.body.add;
 
-    console.log(ln,fn,add,age);
 
+      const insert = `INSERT INTO tbl_students VALUES('0','${ln}','${fn}','${age}','${add}')`
+
+      conn.query(insert, (err)=>{
+      if(err)throw err;
+      res.send(
+         `<script>
+         alert('Data Inserted');
+         location.href='/';
+         </script>` 
+      )
     });
-   
-    app.listen(3000);
+
+    app.listen(3000)});

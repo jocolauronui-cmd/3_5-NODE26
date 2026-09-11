@@ -5,4 +5,4 @@ const conn = mysql.createConnection({
     username: 'root',
     password: "",
     database: 'ui_3_5_36'
-})
+});
